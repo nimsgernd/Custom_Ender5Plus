@@ -396,7 +396,7 @@
 // LCD / Controller
 //
 
-#if ENABLED(BTT_MINI_12864)                       // BTT Mini 12864 V2.0 connected via 18-pin FPC cable
+#if ANY(BTT_MINI_12864, REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER)                       // BTT Mini 12864 V2.0 connected via 18-pin FPC cable
 
   #define BEEPER_PIN                 EXP1_01_PIN
   #define BTN_ENC                    EXP1_02_PIN
