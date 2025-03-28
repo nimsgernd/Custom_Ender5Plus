@@ -185,26 +185,28 @@
   #define E2_CS_PIN                         PD7
 #endif
 
-#define E3_STEP_PIN                         PA10  // MOTOR 8
-#define E3_DIR_PIN                          PA9
-#define E3_ENABLE_PIN                       PA15
-#ifndef E3_CS_PIN
-  #define E3_CS_PIN                         PD6
-#endif
+// #define E3_STEP_PIN                         PA10  // MOTOR 8
+// #define E3_DIR_PIN                          PA9
+// #define E3_ENABLE_PIN                       PA15
+// #ifndef E3_CS_PIN
+//   #define E3_CS_PIN                         PD6
+// #endif
 
-#define E4_STEP_PIN                         PA8   // MOTOR 9
-#define E4_DIR_PIN                          PC7
-#define E4_ENABLE_PIN                       PC9
-#ifndef E4_CS_PIN
-  #define E4_CS_PIN                         PG8
-#endif
+// #define E4_STEP_PIN                         PA8   // MOTOR 9
+// #define E4_DIR_PIN                          PC7
+// #define E4_ENABLE_PIN                       PC9
+// #ifndef E4_CS_PIN
+//   #define E4_CS_PIN                         PG8
+// #endif
 
-#define E5_STEP_PIN                         PG6   // MOTOR 10
-#define E5_DIR_PIN                          PC6
-#define E5_ENABLE_PIN                       PC8
-#ifndef E5_CS_PIN
-  #define E5_CS_PIN                         PG7
-#endif
+// #define E5_STEP_PIN                         PG6   // MOTOR 10
+// #define E5_DIR_PIN                          PC6
+// #define E5_ENABLE_PIN                       PC8
+// #ifndef E5_CS_PIN
+//   #define E5_CS_PIN                         PG7
+// #endif
+
+
 
 //
 // Temperature Sensors
@@ -214,6 +216,45 @@
 #define TEMP_1_PIN                          PC5   // TH1
 #define TEMP_2_PIN                          PC4   // TH2
 #define TEMP_3_PIN                          PA7   // TH3
+
+#ifndef TEMP_0_MOSI_PIN
+  #define TEMP_0_MOSI_PIN                   PE14
+#endif
+#ifndef TEMP_0_MISO_PIN
+  #define TEMP_0_MISO_PIN                   PE13
+#endif
+#ifndef TEMP_0_SCK_PIN
+  #define TEMP_0_SCK_PIN                    PE12
+#endif
+#ifndef TEMP_0_CS_PIN
+  #define TEMP_0_CS_PIN                     PD6
+#endif
+
+#ifndef TEMP_1_MOSI_PIN
+  #define TEMP_1_MOSI_PIN                   PE14
+#endif
+#ifndef TEMP_1_MISO_PIN
+  #define TEMP_1_MISO_PIN                   PE13
+#endif
+#ifndef TEMP_1_SCK_PIN
+  #define TEMP_1_SCK_PIN                    PE12
+#endif
+#ifndef TEMP_1_CS_PIN
+  #define TEMP_1_CS_PIN                     PG8
+#endif
+
+#ifndef TEMP_2_MOSI_PIN
+  #define TEMP_2_MOSI_PIN                   PE14
+#endif
+#ifndef TEMP_2_MISO_PIN
+  #define TEMP_2_MISO_PIN                   PE13
+#endif
+#ifndef TEMP_2_SCK_PIN
+  #define TEMP_2_SCK_PIN                    PE12
+#endif
+#ifndef TEMP_2_CS_PIN
+  #define TEMP_2_CS_PIN                     PG7
+#endif
 
 //
 // Heaters / Fans
